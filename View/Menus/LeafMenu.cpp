@@ -100,6 +100,17 @@ void LeafMenu::run() {
 
     }
 
+    else if(name == "Read Members From File"){
+        string mokhafaf;
+        cout<<"Enter P or S or D:";
+        cin >> mokhafaf;
+        CommandsFromFileMenu::readMembers(mokhafaf);
+    }
+
+    else if(name == "Calculate Total Salary"){
+
+    }
+
     else{
         throw invalid_argument("This Menu hase not been defined!!");
     }
