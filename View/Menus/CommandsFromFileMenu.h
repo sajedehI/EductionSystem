@@ -12,6 +12,8 @@ public:
     virtual void showSubMenus() const override;
     virtual void run() override;
     static void showStudents();
+    static void showProfessors();
+    static void readMembers(std::string mokhafaf);
     static void processAddCourse(std::vector<std::string> vec);
 };
 

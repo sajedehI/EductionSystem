@@ -3,6 +3,7 @@
 
 #include <string>
 #include "Menu.h"
+#include "CommandsFromFileMenu.h"
 
 class LeafMenu : public Menu{
 public:

@@ -74,5 +74,14 @@ void CommandsFromFileMenu:: processAddCourse(vector<string> vec){
     controller.addCourse(vec[2], vec[3], vec[4], pre);
 }
 
+void CommandsFromFileMenu:: readMembers(std::string mokhafaf){
+    if(mokhafaf == "P")
+        showProfessors();
+    else if(mokhafaf == "S")
+        showStudents();
+    else if(mokhafaf == "D")
+        showStudents();
+}
+
 
 
