@@ -16,6 +16,7 @@ private:
     std::vector<Professor> professors;
     std::vector<Course> courses;
     std::vector<Course> currentSemesterCourses;
+    std::vector<Person*> mathClass;
     Controller() = default;
 
 public:
@@ -28,6 +29,8 @@ public:
     void addCourse(std::string courseName, std::string profLast, std::string semester,
             std::vector<std::string> pre);
     void takeCourse(const std::string& studentID, const std::string& courseName);
+    void dropCourse(const std::string& studentID, const std::string& courseName);
+    void salary(std::string ID, std::string first, std::string last, double workHours);
     Student& findStudent(std::string ID);
 
 

@@ -145,3 +145,16 @@ void Controller:: takeCourse(const std::string& studentID, const std::string& co
         findStudent(studentID).currentSemesterCourses.insert({courseName, 0});
     }
 }
+
+void Controller::dropCourse(const std::string &studentID, const std::string &courseName) {
+    if (inCourses(courseName)) {
+        findStudent(studentID).currentSemesterCourses.erase({courseName, 0});
+    }
+}
+
+void Controller::salary(std::string ID, std::string first, std::string last, double workHours) {
+    Student stu{move(ID), move(first), move(last), workHours,
+                vector<string>{}, map<string, double>{}};
+    cout << stu.calculateSalary() << endl;
+
+}
