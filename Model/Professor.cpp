@@ -28,3 +28,11 @@ std::istream& operator>>(std::istream & input, Professor& prof){
     prof = pf;
     return input;
 }
+
+std::string Professor::toString() const{
+    ostringstream output;
+    output << "ID: " << profId << "\tName: " << getFirstName()
+           << "\tSurname: " << getLastName();
+
+    return output.str();
+}
